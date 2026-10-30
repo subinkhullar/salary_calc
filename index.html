@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Salary Restructure Plan</title><style>
+:root{--purple:#43224d;--dark:#301038;--red:#e0044e;--gray:#4c4c4d;--white:#fff;--off:#f1f1f1;--light:#d6d6d6;--lp:#a297b4}*{box-sizing:border-box}body{margin:0;background:var(--off);color:var(--gray);font-family:Inter,"Segoe UI",Arial,sans-serif}.page{max-width:1150px;margin:28px auto;padding:0 18px}.head{position:relative;background:var(--purple);color:#fff;border-top:6px solid var(--red);padding:30px 34px;min-height:132px}.brand-logo{position:static;display:block;margin:0 auto 18px;color:#fff;font:700 32px/1 "Segoe UI",Arial,sans-serif;letter-spacing:.1em;text-align:center;white-space:nowrap}.head-copy{padding:0}.head h1{margin:0;color:#fff;font-size:30px;text-align:center}.head p{margin:10px 0 0;color:#fff;font-size:16px;font-weight:700;text-align:center}.panel{background:#fff;padding:24px 30px;border:1px solid var(--purple);border-top:0}.title{position:relative;text-align:center;color:var(--purple);font-size:17px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin:0 0 20px}.title:before,.title:after{content:"";position:absolute;top:50%;width:35%;height:1px;background:var(--red)}.title:before{left:0}.title:after{right:0}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--off);border:1px solid var(--purple);padding:14px;border-radius:4px}.card label{display:block;font:700 12px Arial,sans-serif;text-transform:uppercase;margin-bottom:8px}.card input,.card select{width:100%;border:0;border-bottom:2px solid var(--red);background:transparent;padding:5px;font:700 20px "Segoe UI",Arial,sans-serif;outline:0}input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield;appearance:textfield}.card small{font:12px Arial,sans-serif;color:var(--gray)}.pf-note{display:none;margin:0 0 18px;padding:12px 15px;background:#f8f4f9;border:1px solid var(--lp);border-left:5px solid var(--red);border-radius:4px;color:var(--purple);font:14px/1.5 Arial,sans-serif}.pf-note strong{color:var(--purple)}.box{overflow:auto;border:1px solid var(--purple)}table{width:100%;min-width:860px;border-collapse:collapse}th,td{padding:10px 12px;border-right:1px solid var(--purple);border-bottom:1px solid var(--purple)}th{font:700 12px Arial,sans-serif;text-transform:uppercase}td{font:14px Arial,sans-serif}td:not(:first-child){text-align:right}tbody tr:nth-child(even){background:#faf8fa}.old{background:#eee8f0}.new{background:#e8dde9}.chg{background:#f8d9e4}.neg{color:var(--red);font-weight:700}.net td{background:#eee8f0!important;font-weight:700;border-top:2px solid var(--red)}.notes{margin:0;font:14px/1.7 Arial,sans-serif;color:var(--gray)}@media(max-width:850px){.cards{grid-template-columns:repeat(2,1fr)}.title:before,.title:after{width:25%}}@media(max-width:600px){.brand-logo{position:static;display:block;min-width:0;margin:0 auto 18px;text-align:center;font-size:26px}.head-copy{padding:0}.head{padding:24px}.cards{grid-template-columns:1fr}}@media(max-width:500px){.panel{padding:20px 16px}.title:before,.title:after{display:none}}
+.export-actions{text-align:center;padding:20px;background:#fff;border:1px solid var(--purple);border-top:0}.export-actions button{padding:11px 20px;border:0;border-radius:4px;background:var(--red);color:#fff;font:700 14px "Segoe UI",Arial,sans-serif;cursor:pointer}.export-actions button:hover,.export-actions button:focus{background:var(--dark);outline:2px solid var(--red);outline-offset:2px}
+
+
+
+/* PDF export alignment */
+@page{size:A4 landscape;margin:8mm}
+@media print{
+  html,body{width:100%;margin:0!important;padding:0!important;background:#fff!important}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  body{font-size:9pt}
+  .page{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+  .head{width:100%!important;min-height:0;padding:7mm 8mm!important;page-break-after:avoid;break-after:avoid}
+  .brand-logo{margin:0 auto 3mm!important;font-size:22pt!important;text-align:center!important}
+  .head h1{font-size:18pt!important;line-height:1.15}.head p{font-size:10pt!important;margin-top:2mm!important}
+  .panel{width:100%!important;padding:4mm 5mm!important;page-break-inside:avoid;break-inside:avoid}
+  .title{font-size:9pt!important;margin-bottom:3mm!important}.title:before,.title:after{width:30%!important}
+  .cards{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:2.5mm!important}
+  .card{min-width:0!important;padding:2.5mm!important}.card label{font-size:7pt!important;margin-bottom:1mm!important}.card input,.card select{font-size:10pt!important;padding:1mm!important}.card small{font-size:7pt!important}
+  .pf-note{margin:0 0 3mm!important;padding:2.5mm!important;font-size:7.5pt!important}
+  .box{width:100%!important;overflow:visible!important}
+  table{width:100%!important;min-width:0!important;table-layout:fixed!important;border-collapse:collapse!important}
+  th,td{padding:1.7mm 1.8mm!important;word-wrap:break-word;overflow-wrap:anywhere}
+  th{font-size:6.8pt!important;line-height:1.15!important}td{font-size:7.2pt!important;line-height:1.15!important}
+  th:first-child,td:first-child{width:24%!important}
+  .notes{font-size:7.5pt!important;line-height:1.35!important;margin:0!important;padding-left:5mm!important}
+  .export-actions{display:none!important}
+}
+
+
+/* Final PDF table readability overrides */
+@media print{
+  .box{width:100%!important;overflow:visible!important}
+  table{width:100%!important;min-width:0!important;table-layout:auto!important;border-collapse:collapse!important}
+  th{font-size:9pt!important;line-height:1.2!important;padding:6px 5px!important;white-space:normal!important}
+  td{font-size:9pt!important;line-height:1.2!important;padding:6px 5px!important;white-space:nowrap!important}
+  th:first-child,td:first-child{width:28%!important;white-space:normal!important}
+  .old,.new,.chg,.net td{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+</style></head><body><main class="page"><header class="head"><div class="brand-logo" role="img" aria-label="Evalueserve">EVALUESERVE</div><div class="head-copy"><h1>Proposed Salary Structure Realignment</h1><p></p></div></header><section class="panel"><h2 class="title">Please Fill the Grey Fields</h2><div class="cards">
+<div class="card"><label for="ctc">Total Annual CTC</label><input id="ctc" type="number" min="0" value="0"><small>Annual</small></div><div class="card"><label for="bonus">Annual Bonus</label><input id="bonus" type="number" min="0" value="0"><small>Annual</small></div><div class="card"><label for="ins">Medical Insurance Premium</label><input id="ins" type="number" min="0" value="0"><small>Annual</small></div><div class="card"><label for="pf">Existing PF Option</label><select id="pf"><option selected>Maximum</option><option>Minimum</option></select></div><div class="card"><label for="nps">Corporate NPS</label><input id="nps" type="number" min="0" value="0"><small>Monthly</small></div><div class="card"><label for="lta">LTA</label><input id="lta" type="number" min="0" value="0"><small>Monthly</small></div><div class="card"><label for="meal">Meal Card</label><select id="meal"><option value="0" selected>0</option><option value="3300">3,300</option><option value="5500">5,500</option></select><small>Monthly</small></div><div class="card"><label for="car">Car Hire</label><select id="car"><option value="0" selected>0</option><option value="33000">33,000</option><option value="45000">45,000</option><option value="54000">54,000</option></select><small>Monthly</small></div></div></section>
+<section class="panel"><h2 class="title">Salary Breakup Comparison</h2><div id="pfNote" class="pf-note" role="status" aria-live="polite"></div><div class="box"><table><thead><tr><th rowspan="2" style="text-align:left;padding-left:20px">Salary Component</th><th colspan="2" class="old">Existing Salary Breakup</th><th colspan="2" class="new">New Wage Code Salary Breakup</th><th class="chg">Monthly Change</th></tr><tr><th class="old">Annual</th><th class="old">Monthly</th><th class="new">Annual</th><th class="new">Monthly</th><th class="chg">New - Existing</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+<section class="panel"><h2 class="title">Notes</h2><ul class="notes"><li>Enter the amounts in the highlighted grey fields using your latest online CTC breakup details.</li><li>Food Allowance and Special Allowance have been merged into Conveyance Allowance under the revised salary structure.</li><li>If the calculated Conveyance Allowance is negative, the difference amount will be adjusted against your reimbursement options, such as LTA, Meal Card, Car Hiring, and NPS.</li></ul></section><div class="export-actions"><button type="button" onclick="exportToPDF()">Export to PDF</button></div></main>
+<script>
+function exportToPDF(){
+  const originalTitle=document.title;
+  const originalZoom=document.body.style.zoom;
+  document.title='Salary Structure Realignment';
+  document.body.classList.add('pdf-export');
+  document.body.style.zoom='90%';
+  requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
+      window.print();
+      setTimeout(()=>{
+        document.body.style.zoom=originalZoom || '100%';
+        document.body.classList.remove('pdf-export');
+        document.title=originalTitle;
+      },500);
+    });
+  });
+}const q=x=>document.getElementById(x),R=Math.round,V=x=>Math.max(0,Number(q(x).value)||0),M=x=>{x=R(x);return x<0?'('+Math.abs(x).toLocaleString('en-IN')+')':x.toLocaleString('en-IN')},T=x=>'<td class="'+(x<0?'neg':'')+'">'+M(x)+'</td>';function calc(){const c=V('ctc'),b=V('bonus'),i=V('ins'),p=q('pf').value,n=V('nps')*12,l=V('lta')*12,m=V('meal')*12,a=V('car')*12,pool=c-b-i,eb=c?(p==='Maximum'?pool*100/212:pool*100/200):0,nb=c?pool*100/200:0,emb=eb/12,nmb=nb/12,ep=c?R(p==='Minimum'?Math.min(emb,15000)*.12*12:eb*.12):0,np=c?R(p==='Minimum'?Math.min(nmb,25000)*.12*12:nb*.12):0,eh=R(eb*.5),nh=R(nb*.5),food=c===0?0:(m!==0?0:39600),sp=c?pool-(eb+ep+eh+food+n+l+m+a):0,cv=c?pool-(nb+np+nh+n+l+m+a):0,note=q('pfNote');if(c>0&&p==='Minimum'&&nmb<25000){note.style.display='block';note.innerHTML='<strong>PF Contribution:</strong> Since the Minimum PF option is selected and monthly Basic Salary is below Rs.25,000, employer PF is calculated at 12% of actual Basic Salary.'}else if(c>0&&p==='Minimum'){note.style.display='block';note.innerHTML='<strong>PF Contribution:</strong> Since the Minimum PF option is selected and monthly Basic Salary is Rs.25,000 or more, employer PF is capped at Rs.3,000 per month.'}else{note.style.display='none';note.textContent=''}const z=[['Basic Salary',eb,R(eb/12),nb,R(nb/12)],['House Rent Allowance',eh,R(eh/12),nh,R(nh/12)],['Special Allowance',sp,R(sp/12),0,0],['Conveyance Allowance',0,0,cv,R(cv/12)],['Food Allowance',food,R(food/12),0,0],['Corporate NPS',n,R(n/12),n,R(n/12)],['LTA',l,R(l/12),l,R(l/12)],['Meal Card',m,R(m/12),m,R(m/12)],['Car Hire',a,R(a/12),a,R(a/12)],['Employer PF Contribution',ep,R(ep/12),np,R(np/12)],['Annual Bonus',b,R(b/12),b,R(b/12)],['Group Medical Insurance Premium',i,R(i/12),i,R(i/12)]];let h='',tea=0,tna=0;z.forEach(x=>{h+='<tr><td>'+x[0]+'</td>'+T(x[1])+T(x[2])+T(x[3])+T(x[4])+T(x[4]-x[2])+'</tr>';tea+=Number(x[1])||0;tna+=Number(x[3])||0});let tem=R(tea/12),tnm=R(tna/12),ch=tnm-tem;if(Math.abs(ch)<=1){ch=0;tnm=tem}h+='<tr class="net"><td>Grand Total</td>'+T(tea)+T(tem)+T(tna)+T(tnm)+T(ch)+'</tr>';q('rows').innerHTML=h}['ctc','bonus','ins','pf','nps','lta','meal','car'].forEach(x=>q(x).addEventListener(['pf','meal','car'].includes(x)?'change':'input',calc));calc();</script></body></html>
